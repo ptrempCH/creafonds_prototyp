@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Die Creafonds AG ist eine Immobilienanlage- und Entwicklungsgesellschaft. Portfolio aus Renditeliegenschaften und Entwicklungsarealen.">
+    <meta name="keywords" content="Immobilien, Anlagegesellschaft, Real Estate, Creafonds AG, Luzern, Schweiz">
+    <title>Creafonds AG | Immobilien Anlagegesellschaft</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="#home" class="nav__logo">
+                    <img src="images/logo.png" alt="Creafonds AG" class="nav__logo-img">
+                    <span class="nav__logo-text">Creafonds</span>
+                </a>
+                
+                <button class="nav__toggle" id="navToggle" aria-label="Menu öffnen">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </button>
+                
+                <ul class="nav__menu" id="navMenu">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#strategie" class="nav__link">Anlagestrategie</a></li>
+                    <li class="nav__item"><a href="#organisation" class="nav__link">Organisation</a></li>
+                    <li class="nav__item"><a href="#kontakt" class="nav__link nav__link--cta">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__background">
+            <img src="images/home/slide-1.jpg" alt="Creafonds Immobilien" class="hero__image">
+            <div class="hero__overlay"></div>
+        </div>
+        
+        <div class="hero__content">
+            <div class="hero__text-box">
+                <span class="hero__subtitle">Immobilien Anlagegesellschaft</span>
+                <h1 class="hero__title">Creafonds AG</h1>
+                <p class="hero__description">
+                    Ihr Partner für Renditeliegenschaften und Entwicklungsareale in der Schweiz
+                </p>
+                <div class="hero__actions">
+                    <a href="#portfolio" class="btn btn--primary">Portfolio entdecken</a>
+                    <a href="#kontakt" class="btn btn--outline">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about" class="hero__scroll">
+            <span class="hero__scroll-text">Mehr erfahren</span>
+            <svg class="hero__scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section-label">Über uns</span>
+                    <h2 class="section-title">Ihre Immobilien-Anlagegesellschaft</h2>
+                    <p class="about__text">
+                        Die Creafonds AG ist eine Immobilienanlage- und Entwicklungsgesellschaft mit Sitz in Luzern. 
+                        Das Portfolio wird selektiv erweitert und eine Mischung zwischen Renditeliegenschaften 
+                        mit bestehenden Erträgen sowie Entwicklungsarealen wird angestrebt.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">9+</span>
+                            <span class="stat__label">Aktive Projekte</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">20+</span>
+                            <span class="stat__label">Jahre Erfahrung</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">CHF 5-25M</span>
+                            <span class="stat__label">Investitionsvolumen</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__visual">
+                    <div class="about__image-wrapper">
+                        <img src="images/home/slide-2.jpg" alt="Creafonds Projekt" class="about__image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Unser Portfolio</span>
+                <h2 class="section-title">Liegenschaften & Projekte</h2>
+                <p class="section-description">
+                    Die Creafonds AG verfügt über ein ausgewogenes Portfolio aus Rendite- und Entwicklungsobjekten.
+                    Unter Renditeliegenschaften werden Liegenschaften verstanden, deren Struktur und Nutzung gegeben ist.
+                    Entwicklungsareale sind Grundstücke mit signifikantem Entwicklungspotenzial.
+                </p>
+            </div>
+            
+            <div class="portfolio__filter">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="rendite">Renditeliegenschaften</button>
+                <button class="filter-btn" data-filter="entwicklung">Entwicklungsareale</button>
+            </div>
+            
+            <div class="portfolio__grid">
+                <!-- Basel BS -->
+                <article class="portfolio-card" data-category="rendite">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/basel.jpg" alt="Basel BS" loading="lazy">
+                        <span class="portfolio-card__badge">Renditeliegenschaft</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Basel BS</h3>
+                        <p class="portfolio-card__description">
+                            Ein Industrieareal mit hoher Nutzfläche. Geführt als Renditeobjekt eignet sich das Areal 
+                            hervorragend für die Projektentwicklung mit bis zu 40m Bauhöhe. Direkt neben der Autobahn 
+                            und dem St. Jakobs-Stadion.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('basel')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Ennetbürgen NW -->
+                <article class="portfolio-card" data-category="entwicklung">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/ennetbuergen.jpg" alt="Ennetbürgen NW" loading="lazy">
+                        <span class="portfolio-card__badge portfolio-card__badge--dev">Entwicklungsareal</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Ennetbürgen NW</h3>
+                        <p class="portfolio-card__description">
+                            Entwicklungsareal mit attraktivem Standort am Vierwaldstättersee. 
+                            Kaufrecht seit März 2024.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('ennetbuergen')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Obfelden ZH -->
+                <article class="portfolio-card" data-category="rendite">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/obfelden.jpg" alt="Obfelden ZH" loading="lazy">
+                        <span class="portfolio-card__badge">Renditeliegenschaft</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Obfelden ZH</h3>
+                        <p class="portfolio-card__description">
+                            Renditeliegenschaft in der Agglomeration Zürich mit stabilen Erträgen.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('obfelden')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Reinach AG -->
+                <article class="portfolio-card" data-category="entwicklung">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/reinach.jpg" alt="Reinach AG" loading="lazy">
+                        <span class="portfolio-card__badge portfolio-card__badge--dev">Entwicklungsareal</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Reinach AG</h3>
+                        <p class="portfolio-card__description">
+                            Entwicklungsareal mit Potenzial für Wohnbauprojekt in attraktiver Lage.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('reinach')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Schönenwerd SO -->
+                <article class="portfolio-card" data-category="entwicklung">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/schoenenwerd.jpg" alt="Schönenwerd SO" loading="lazy">
+                        <span class="portfolio-card__badge portfolio-card__badge--dev">Entwicklungsareal</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Schönenwerd SO</h3>
+                        <p class="portfolio-card__description">
+                            Entwicklungsareal mit signifikantem Transformationspotenzial.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('schoenenwerd')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Spreitenbach AG -->
+                <article class="portfolio-card" data-category="entwicklung">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/spreitenbach.jpg" alt="Spreitenbach AG" loading="lazy">
+                        <span class="portfolio-card__badge portfolio-card__badge--dev">Entwicklungsareal</span>
+                        <span class="portfolio-card__new">Neu</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Spreitenbach AG</h3>
+                        <p class="portfolio-card__description">
+                            Entwicklungsareal – Parzellen 830 und 3593, erworben März 2025.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('spreitenbach')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Steinhausen ZG -->
+                <article class="portfolio-card" data-category="rendite">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/steinhausen.jpg" alt="Steinhausen ZG" loading="lazy">
+                        <span class="portfolio-card__badge">Renditeliegenschaft</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Steinhausen ZG</h3>
+                        <p class="portfolio-card__description">
+                            Renditeliegenschaft im wirtschaftsstarken Kanton Zug mit exzellenter Anbindung.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('steinhausen')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Unterkulm AG -->
+                <article class="portfolio-card" data-category="entwicklung">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/unterkulm.jpg" alt="Unterkulm AG" loading="lazy">
+                        <span class="portfolio-card__badge portfolio-card__badge--dev">Entwicklungsareal</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Unterkulm AG</h3>
+                        <p class="portfolio-card__description">
+                            Entwicklungsareal mit Potenzial für zukünftige Wohnnutzung.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('unterkulm')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Wohlen AG -->
+                <article class="portfolio-card" data-category="entwicklung">
+                    <div class="portfolio-card__image">
+                        <img src="images/portfolio/wohlen.jpg" alt="Wohlen AG" loading="lazy">
+                        <span class="portfolio-card__badge portfolio-card__badge--dev">Entwicklungsareal</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Wohlen AG</h3>
+                        <p class="portfolio-card__description">
+                            Die Liegenschaft befindet sich im Zentrum von Wohlen. Das Neubauprojekt 
+                            umfasst mehrere Wohnbaukörper in einer modernen Gesamtüberbauung.
+                        </p>
+                        <button class="portfolio-card__btn" onclick="openModal('wohlen')">
+                            Details ansehen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Recent Portfolio Activity -->
+            <div class="portfolio__activity">
+                <h3 class="portfolio__activity-title">Jüngste Bewegungen</h3>
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <span class="activity-item__date">Nov 2025</span>
+                        <span class="activity-item__action">Verkauf</span>
+                        <span class="activity-item__location">Zofingen AG</span>
+                    </li>
+                    <li class="activity-item">
+                        <span class="activity-item__date">Nov 2025</span>
+                        <span class="activity-item__action">Verkauf</span>
+                        <span class="activity-item__location">Oftringen AG</span>
+                    </li>
+                    <li class="activity-item">
+                        <span class="activity-item__date">Nov 2025</span>
+                        <span class="activity-item__action">Verkauf</span>
+                        <span class="activity-item__location">Dagmersellen LU</span>
+                    </li>
+                    <li class="activity-item">
+                        <span class="activity-item__date">Mrz 2025</span>
+                        <span class="activity-item__action">Kauf</span>
+                        <span class="activity-item__location">Spreitenbach AG</span>
+                    </li>
+                    <li class="activity-item">
+                        <span class="activity-item__date">Mrz 2024</span>
+                        <span class="activity-item__action">Kaufrecht</span>
+                        <span class="activity-item__location">Ennetbürgen NW</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anlagestrategie Section -->
+    <section class="strategy" id="strategie">
+        <div class="container">
+            <div class="strategy__grid">
+                <div class="strategy__content">
+                    <span class="section-label">Unsere Strategie</span>
+                    <h2 class="section-title">Anlagestrategie</h2>
+                    <p class="strategy__text">
+                        Die Creafonds AG investiert im Segment von CHF 5-25 Mio. in Anlageobjekte mit 
+                        Nutzungspotentialen und Handlungsbedarf, teilweise auch in Wohnbaugrundstücke 
+                        bis CHF 2 Mio. Geografisch sind Lagen in den Agglomerationen der grossen 
+                        Zentren bevorzugt.
+                    </p>
+                    
+                    <div class="strategy__features">
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 21h18M3 7v14M21 7v14M6 11h.01M6 15h.01M10 11h.01M10 15h.01M14 11h.01M14 15h.01M18 11h.01M18 15h.01M5 7l7-4 7 4"/>
+                                </svg>
+                            </div>
+                            <h4 class="feature__title">Renditeliegenschaften</h4>
+                            <p class="feature__text">Objekte mit bestehenden Erträgen und stabiler Nutzung</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <h4 class="feature__title">Entwicklungsareale</h4>
+                            <p class="feature__text">Grundstücke mit signifikantem Transformationspotenzial</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <h4 class="feature__title">Zentrale Lagen</h4>
+                            <p class="feature__text">Fokus auf Agglomerationen der Schweizer Wirtschaftszentren</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="strategy__visual">
+                    <div class="strategy__chart">
+                        <img src="images/strategy/strategy-chart.png" alt="Positionierung Anlagestrategie" class="strategy__image">
+                        <p class="strategy__caption">
+                            Positionierung anhand des Nutzungspotenzials und der Objektgrösse
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organisation Section -->
+    <section class="team" id="organisation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Unser Team</span>
+                <h2 class="section-title">Organisation</h2>
+                <p class="section-description">
+                    Das Führungspersonal besteht aus gestandenen Fachpersönlichkeiten 
+                    mit bemerkenswerten Leistungsausweisen.
+                </p>
+            </div>
+            
+            <div class="team__grid">
+                <!-- Daniele Obino -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/daniele-obino.jpg" alt="Daniele Obino" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Daniele Obino</h3>
+                        <p class="team-card__role">Präsident des Verwaltungsrates</p>
+                        <p class="team-card__bio">
+                            Dipl. Bauingenieur; Aufbau mehrerer Firmen mit bis zu 300 Mitarbeitern; 
+                            Privater Aufbau eines Immobilienportfolios in börsenfähiger Grösse.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Joerg Furrer -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/joerg-furrer.jpg" alt="Joerg Furrer" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Joerg Furrer</h3>
+                        <p class="team-card__role">Geschäftsführer, Sekretär des VR</p>
+                        <p class="team-card__bio">
+                            Betriebswirt Universität Zürich, lic.oec.publ., Master of Advanced Studies 
+                            in Real Estate, Universität Zürich.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Roger Tremp -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/roger-tremp.jpg" alt="Roger Tremp" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Roger Tremp</h3>
+                        <p class="team-card__role">Portfolio-Manager</p>
+                    </div>
+                </div>
+
+                <!-- Carlo Strebel -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/carlo-strebel.jpg" alt="Carlo Strebel" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Carlo Strebel</h3>
+                        <p class="team-card__role">Vizepräsident des Verwaltungsrates</p>
+                        <p class="team-card__bio">
+                            Dipl. Wirtschaftskaufmann; Präsident VR der AJO Finanz AG, Luzern; 
+                            vormals langjähriger Direktor der Intercity AG, Luzern.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Daniel Emch -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/daniel-emch.jpg" alt="Daniel Emch" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Daniel Emch</h3>
+                        <p class="team-card__role">Mitglied des Verwaltungsrates</p>
+                        <p class="team-card__bio">Firmenaufbau als Partner und Geschäftsführer.</p>
+                    </div>
+                </div>
+
+                <!-- Peter Kaufmann -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/peter-kaufmann.jpg" alt="Peter Kaufmann" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Peter Kaufmann</h3>
+                        <p class="team-card__role">Mitglied des Verwaltungsrates</p>
+                        <p class="team-card__bio">
+                            Geschäftsführer Finezia AG; Executive Master of Banking; über 30 Jahre 
+                            Erfahrung in der Finanzbranche.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Konrad Studerus -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/konrad-studerus.jpg" alt="Konrad Studerus" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Konrad Studerus</h3>
+                        <p class="team-card__role">Mitglied des Verwaltungsrates</p>
+                        <p class="team-card__bio">
+                            Jurist; 40 Jahre Erfahrung in leitenden Positionen der Lebensmittelbranche 
+                            und Maschinenindustrie.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Xenia Riva -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/xenia-riva.jpg" alt="Xenia Riva" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Xenia Riva</h3>
+                        <p class="team-card__role">Mitglied des Verwaltungsrates</p>
+                        <p class="team-card__bio">
+                            Geschäftsführerin Gonset Holding AG, Architektin EPFL, 
+                            mehr als 20 Jahre Berufserfahrung.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ernst Maréchaux -->
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="images/team/ernst-marechaux.jpg" alt="Ernst Maréchaux" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Ernst Maréchaux</h3>
+                        <p class="team-card__role">Mitglied des Verwaltungsrates</p>
+                        <p class="team-card__bio">Verwaltungsratspräsident der Maréchaux Holding AG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <span class="section-label">Kontakt</span>
+                    <h2 class="section-title">Sprechen Sie mit uns</h2>
+                    <p class="contact__text">
+                        Unsere Gesellschaft befindet sich im Zentrum von Luzern. 
+                        Wir sind sowohl mit dem ÖV als auch mit dem Auto gut zu erreichen.
+                    </p>
+                    
+                    <div class="contact__details">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item__content">
+                                <h4>Adresse</h4>
+                                <p>Creafonds AG<br>Kasernenplatz 2<br>6003 Luzern</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item__content">
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+41794304071">+41 79 430 40 71</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item__content">
+                                <h4>E-Mail</h4>
+                                <p><a href="mailto:joerg.furrer@creafonds.ch">joerg.furrer@creafonds.ch</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.app.goo.gl/JuuUtiXdgh2G8K366" target="_blank" class="btn btn--primary contact__route-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Routenplaner öffnen
+                    </a>
+                </div>
+                
+                <div class="contact__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.0373046087497!2d8.298051676489556!3d47.05134542925898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ffba89c8f8e67%3A0x2b52fd68cd13cd99!2sKasernenplatz%202%2C%206003%20Luzern!5e0!3m2!1sde!2sch!4v1702134567890!5m2!1sde!2sch"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__logo">Creafonds AG</span>
+                    <p class="footer__tagline">Immobilien Anlagegesellschaft</p>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#strategie">Anlagestrategie</a></li>
+                        <li><a href="#organisation">Organisation</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__contact">
+                    <h4>Kontakt</h4>
+                    <p>Kasernenplatz 2<br>6003 Luzern</p>
+                    <p><a href="tel:+41794304071">+41 79 430 40 71</a></p>
+                    <p><a href="mailto:joerg.furrer@creafonds.ch">joerg.furrer@creafonds.ch</a></p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Creafonds AG. Alle Rechte vorbehalten.</p>
+                <a href="Impressum.htm" class="footer__impressum">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal__overlay" onclick="closeModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeModal()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal__body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
